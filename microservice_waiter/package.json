@@ -1,0 +1,36 @@
+{
+  "name": "microservice_waiter",
+  "version": "1.0.0",
+  "description": "Microservice waiter",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child --watch src ./src/index.ts",
+    "prod": "tsc && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroMelloo/projeto_gerenciador_pedidos_restaurante_javascript_kafka.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Kafka",
+    "Redis"
+  ],
+  "author": "Leandro Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroMelloo/projeto_gerenciador_pedidos_restaurante_javascript_kafka/issues"
+  },
+  "homepage": "https://github.com/LeandroMelloo/projeto_gerenciador_pedidos_restaurante_javascript_kafka#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-rdkafka": "^2.10.1"
+  }
+}
